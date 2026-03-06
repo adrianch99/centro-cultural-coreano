@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos de Coreano | Centro Cultural Coreano</title>
+  <link rel="icon" href="/assets/images/Logo nuevo CCC.jpeg" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/script.js" defer></script>
+</head>
+
+<body class="bg-white text-gray-800 korean-pattern">
+  <!-- Navbar mejorada -->
+  <nav class="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center space-x-4">
+          <img src="/assets/images/Logo nuevo CCC.jpeg" alt="Centro Cultural Coreano"
+            class="w-32 h-auto max-h-24 rounded-lg shadow-md hover-scale cursor-pointer" />
+          <span class="hidden lg:block text-sm font-medium text-gray-500 border-l-2 border-gray-300 pl-4">
+            Cursos de Idioma Coreano
+          </span>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="/index.html"
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Inicio</a>
+          <a href="/pages/academia.html"
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Academia</a>
+          <a href="/pages/idioma.html"
+            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full shadow-md">Idioma</a>
+          <a href="/pages/cultura.html"
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Cultura</a>
+          <a href="/pages/contacto.html"
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Contacto</a>
+          <a href="/pages/registrate.html"
+            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg">Regístrate</a>
+          <a href="/pages/escueladetaekwondo.html"
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Taekwondo</a>
+        </div>
+
+        <div class="md:hidden">
+          <button id="menu-toggle"
+            class="text-gray-600 hover:text-red-600 text-2xl focus:outline-none transition-colors">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg">
+      <div class="px-4 py-2 space-y-1">
+        <a href="/index.html"
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Inicio</a>
+        <a href="/pages/academia.html"
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Academia</a>
+        <a href="/pages/idioma.html" class="block px-4 py-3 bg-red-50 text-red-600 rounded-lg font-medium">Idioma</a>
+        <a href="/pages/cultura.html"
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Cultura</a>
+        <a href="/pages/contacto.html"
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Contacto</a>
+        <a href="/pages/registrate.html"
+          class="block px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-center font-medium">Regístrate</a>
+        <a href="/pages/escueladetaekwondo.html"
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Taekwondo</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Idioma Coreano -->
+  <div class="relative h-[60vh] min-h-[500px] overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="w-full h-full bg-gradient-to-r from-red-600 to-blue-600"></div>
+      <div class="absolute inset-0 bg-black/50"></div>
+      <!-- Elementos decorativos Hangul -->
+      <div class="absolute inset-0 flex items-center justify-center opacity-10">
+        <span class="text-white text-9xl font-black">한글</span>
+      </div>
+    </div>
+
+    <div class="relative h-full max-w-7xl mx-auto px-4 flex items-center">
+      <div class="text-white max-w-3xl">
+        <div class="flex items-center mb-6">
+          <span class="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium">
+            <i class="fas fa-language mr-2"></i>한국어 | Idioma Coreano
+          </span>
+        </div>
+
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          Aprende Coreano<br />con los mejores
+        </h1>
+
+        <p class="text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl">
+          Desde el alfabeto Hangul hasta la conversación fluida.
+          Clases presenciales y virtuales para todos los niveles.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#niveles"
+            class="px-8 py-4 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-all duration-300 font-medium inline-flex items-center shadow-lg">
+            Ver niveles disponibles
+            <i class="fas fa-arrow-down ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decoración inferior -->
+    <div class="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-red-500 via-blue-500 to-red-500"></div>
+  </div>
+
+  <!-- Contenido principal -->
+  <main class="max-w-7xl mx-auto px-4 py-16">
+    <!-- Título de sección -->
+    <div id="niveles" class="text-center mb-12">
+      <span class="text-red-600 font-semibold text-sm tracking-wider uppercase">Niveles MCER</span>
+      <h2 class="text-4xl font-bold mt-2 mb-4">Clasificación por niveles</h2>
+      <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+      <p class="text-gray-600 max-w-2xl mx-auto mt-6">
+        Desde principiante hasta avanzado, encuentrа el nivel perfecto para ti
+      </p>
+    </div>
+
+    <!-- Niveles de Coreano -->
+    <div class="grid md:grid-cols-5 gap-4 mb-16">
+      <!-- A1 -->
+      <div class="bg-gradient-to-br from-green-400 to-green-600 rounded-2xl p-6 text-white text-center lang-card">
+        <div class="text-5xl font-black mb-2">A1</div>
+        <div class="text-sm uppercase tracking-wider">Básico inicial</div>
+        <div class="mt-4 text-3xl">🇰🇷</div>
+      </div>
+      <!-- A2 -->
+      <div class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl p-6 text-white text-center lang-card">
+        <div class="text-5xl font-black mb-2">A2</div>
+        <div class="text-sm uppercase tracking-wider">Básico</div>
+        <div class="mt-4 text-3xl">🇰🇷</div>
+      </div>
+      <!-- B1 -->
+      <div class="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl p-6 text-white text-center lang-card">
+        <div class="text-5xl font-black mb-2">B1</div>
+        <div class="text-sm uppercase tracking-wider">Intermedio</div>
+        <div class="mt-4 text-3xl">🇰🇷</div>
+      </div>
+      <!-- B2 -->
+      <div class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl p-6 text-white text-center lang-card">
+        <div class="text-5xl font-black mb-2">B2</div>
+        <div class="text-sm uppercase tracking-wider">Intermedio alto</div>
+        <div class="mt-4 text-3xl">🇰🇷</div>
+      </div>
+      <!-- C1 -->
+      <div class="bg-gradient-to-br from-red-400 to-red-600 rounded-2xl p-6 text-white text-center lang-card">
+        <div class="text-5xl font-black mb-2">C1</div>
+        <div class="text-sm uppercase tracking-wider">Avanzado</div>
+        <div class="mt-4 text-3xl">🇰🇷</div>
+      </div>
+    </div>
+
+    <!-- Curso Intensivo -->
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden mb-12 lang-card">
+      <div class="grid md:grid-cols-2">
+        <div class="p-8 md:p-12 bg-gradient-to-br from-red-600 to-red-800 text-white">
+          <span class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+            <i class="fas fa-bolt mr-2"></i>INTENSIVO
+          </span>
+          <h3 class="text-4xl font-bold mb-4">Curso Intensivo</h3>
+          <p class="text-red-100 mb-6 text-lg">Inmersión total en el idioma coreano</p>
+
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <i class="fas fa-calendar-alt w-8 text-red-200"></i>
+              <span>Lunes a viernes</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-clock w-8 text-red-200"></i>
+              <span>8 semanas de duración</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 md:p-12">
+          <div class="space-y-6">
+            <!-- Horario 1 -->
+            <div class="flex justify-between items-center border-b pb-4">
+              <div>
+                <div class="font-bold text-lg">🕘 Mañana</div>
+                <div class="text-gray-600">8:00 am - 12:00 pm</div>
+              </div>
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm font-semibold">Presencial</span>
+            </div>
+
+            <!-- Horario 2 -->
+            <div class="flex justify-between items-center border-b pb-4">
+              <div>
+                <div class="font-bold text-lg">🕓 Tarde</div>
+                <div class="text-gray-600">4:00 pm - 6:00 pm</div>
+              </div>
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm font-semibold">Presencial</span>
+            </div>
+
+            <!-- Horario 3 -->
+            <div class="flex justify-between items-center border-b pb-4">
+              <div>
+                <div class="font-bold text-lg">🕖 Noche</div>
+                <div class="text-gray-600">7:00 pm - 9:00 pm</div>
+              </div>
+              <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">Virtual</span>
+            </div>
+
+            <!-- Precio -->
+            <div class="mt-6">
+              <span class="text-3xl font-bold text-red-600">$680.000</span>
+              <span class="text-gray-500">/mensual</span>
+            </div>
+
+            <a href="/pages/registrate.html"
+              class="block w-full text-center py-3 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition-colors">
+              Inscribirme ahora
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Curso Virtual -->
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden mb-12 lang-card">
+      <div class="grid md:grid-cols-2">
+        <div class="p-8 md:p-12 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+          <span class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+            <i class="fas fa-laptop mr-2"></i>VIRTUAL
+          </span>
+          <h3 class="text-4xl font-bold mb-4">Curso Virtual</h3>
+          <p class="text-blue-100 mb-6 text-lg">Aprende desde la comodidad de tu casa</p>
+
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <i class="fas fa-calendar-alt w-8 text-blue-200"></i>
+              <span>Lunes, miércoles y viernes</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-clock w-8 text-blue-200"></i>
+              <span>8 semanas de duración</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 md:p-12">
+          <div class="space-y-6">
+            <!-- Horario 1 -->
+            <div class="flex justify-between items-center border-b pb-4">
+              <div>
+                <div class="font-bold text-lg">🕐 Tarde</div>
+                <div class="text-gray-600">2:00 pm - 4:00 pm</div>
+              </div>
+              <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">Virtual</span>
+            </div>
+
+            <!-- Horario 2 -->
+            <div class="flex justify-between items-center border-b pb-4">
+              <div>
+                <div class="font-bold text-lg">🕕 Noche</div>
+                <div class="text-gray-600">6:00 pm - 8:00 pm</div>
+              </div>
+              <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">Virtual</span>
+            </div>
+
+            <!-- Precio -->
+            <div class="mt-6">
+              <span class="text-3xl font-bold text-blue-600">$490.000</span>
+              <span class="text-gray-500">/mensual</span>
+            </div>
+
+            <a href="/pages/registrate.html"
+              class="block w-full text-center py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-colors">
+              Inscribirme ahora
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Por qué aprender coreano -->
+    <div class="bg-gray-50 rounded-3xl p-8 md:p-12 mb-12">
+      <h3 class="text-3xl font-bold text-center mb-10">¿Por qué aprender coreano?</h3>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-music text-2xl text-red-600"></i>
+          </div>
+          <h4 class="font-bold mb-2">K-POP</h4>
+          <p class="text-sm text-gray-600">Entiende tus canciones favoritas</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-film text-2xl text-red-600"></i>
+          </div>
+          <h4 class="font-bold mb-2">K-Dramas</h4>
+          <p class="text-sm text-gray-600">Disfruta sin subtítulos</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-briefcase text-2xl text-red-600"></i>
+          </div>
+          <h4 class="font-bold mb-2">Oportunidades</h4>
+          <p class="text-sm text-gray-600">Mejores oportunidades laborales</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-plane text-2xl text-red-600"></i>
+          </div>
+          <h4 class="font-bold mb-2">Viajes</h4>
+          <p class="text-sm text-gray-600">Comunícate en Corea</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Información adicional del textarea -->
+    <div class="bg-gradient-to-r from-red-50 to-blue-50 rounded-3xl p-8 border-2 border-dashed border-red-200">
+      <div class="flex items-start space-x-4">
+        <div class="text-red-600 text-2xl">
+          <i class="fas fa-info-circle"></i>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-2">Información importante:</h4>
+          <p class="text-gray-700 whitespace-pre-line">
+            한국어 강좌 - Curso de idioma Coreano
+
+            📍 Todos los cursos tienen una duración de 8 semanas
+            📚 Material de estudio incluido
+            🎓 Certificado al finalizar el nivel
+            👨‍🏫 Profesores nativos certificados
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer mejorado -->
+  <footer class="bg-gray-900 text-white mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <img src="/assets/images/Logo nuevo CCC.jpeg" alt="logo" class="w-32 h-auto mb-4 rounded-lg" />
+          <p class="text-gray-400 text-sm">Conectando Colombia con la cultura coreana desde 2025</p>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-4">Enlaces rápidos</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition-colors">Sobre nosotros</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Programas</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Profesores</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Testimonios</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-4">Contacto</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><i class="fas fa-map-marker-alt mr-2"></i> Medellin, Colombia</li>
+            <li><i class="fas fa-phone mr-2"></i> +57 3207098884</li>
+            <li><i class="fas fa-envelope mr-2"></i> centroculturalcoreano525@gmail.com</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-4">Síguenos</h4>
+          <div class="flex space-x-4">
+            <a href="#"
+              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+        &copy; 2025 Centro Cultural Coreano en Colombia | Cursos de Idioma Coreano
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

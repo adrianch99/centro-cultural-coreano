@@ -1,0 +1,190 @@
+/* estilos generales */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+.korean-pattern {
+  background-color: #f8f8f8;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.02) 0px,
+    rgba(0, 0, 0, 0.02) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+.gradient-korea {
+  background: linear-gradient(135deg, #c53a2b 0%, #2d5e9c 100%);
+}
+
+/* estilos de academia */
+.academia-card {
+  transition: all 0.3s ease;
+}
+
+.academia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* estilos de contacto */
+.contact-card {
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* estilos de cultura */
+.culture-card {
+  transition: all 0.3s ease;
+}
+
+.culture-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.hanbok-bg {
+  background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+}
+
+.kfood-bg {
+  background: linear-gradient(135deg, #ff8c42 0%, #ff3a3a 100%);
+}
+
+.music-bg {
+  background: linear-gradient(135deg, #a06ee1 0%, #6190e8 100%);
+}
+
+.games-bg {
+  background: linear-gradient(135deg, #ffd93e 0%, #ff9f4a 100%);
+}
+
+.art-bg {
+  background: linear-gradient(135deg, #95e1d3 0%, #89c9b4 100%);
+}
+
+.festival-bg {
+  background: linear-gradient(135deg, #f7d794 0%, #f5a97f 100%);
+}
+
+/* estilos de taekwondo */
+.tkd-card {
+  transition: all 0.3s ease;
+}
+
+.tkd-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.belt-yellow {
+  background: linear-gradient(135deg, #f1c40f, #f39c12);
+}
+
+.belt-green {
+  background: linear-gradient(135deg, #27ae60, #229954);
+}
+
+.belt-blue {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.belt-red {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.belt-black {
+  background: linear-gradient(135deg, #34495e, #2c3e50);
+}
+
+.gradient-tkd {
+  background: linear-gradient(135deg, #e62424 0%, #1a1a1a 100%);
+}
+
+.dojang-bg {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path d="M20,20 L80,20 L80,80 L20,80 Z" fill="none" stroke="%23e62424" stroke-width="2"/><circle cx="50" cy="50" r="15" fill="none" stroke="%23e62424" stroke-width="2"/></svg>');
+  background-size: 100px 100px;
+}
+
+/* estilos de idioma */
+.hangul-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.level-badge {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.lang-card {
+  transition: all 0.3s ease;
+}
+
+.lang-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* estilos de registro */
+.form-card {
+  transition: all 0.3s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
