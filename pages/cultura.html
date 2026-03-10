@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cultura Coreana | Centro Cultural Coreano</title>
+  <title>한국 문화 | 한국 문화원</title>
   <link rel="icon" href="/assets/images/Logo nuevo CCC.jpeg" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -13,8 +13,7 @@
   <script src="../assets/js/script.js" defer></script>
 </head>
 
-<body class="bg-white text-gray-800">
-
+<body class="bg-white text-gray-800 korean-pattern">
   <!-- Navbar mejorada -->
   <nav class="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,25 +22,26 @@
           <img src="/assets/images/Logo nuevo CCC.jpeg" alt="Centro Cultural Coreano"
             class="w-32 h-auto max-h-24 rounded-lg shadow-md hover-scale cursor-pointer" />
           <span class="hidden lg:block text-sm font-medium text-gray-500 border-l-2 border-gray-300 pl-4">
-            Cultura Coreana
+            한국 문화 아카데미
           </span>
         </div>
 
+        <!-- Menú desktop -->
         <div class="hidden md:flex items-center space-x-1">
           <a href="/index.html"
-            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Inicio</a>
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">홈</a>
           <a href="/pages/academia.html"
-            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Academia</a>
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">아카데미</a>
           <a href="/pages/idioma.html"
-            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Idioma</a>
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">언어</a>
           <a href="/pages/cultura.html"
-            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full shadow-md">Cultura</a>
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">문화</a>
           <a href="/pages/contacto.html"
-            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Contacto</a>
+            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full shadow-md">연락처</a>
           <a href="/pages/registrate.html"
-            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg">Regístrate</a>
+            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg">등록하기</a>
           <a href="/pages/escueladetaekwondo.html"
-            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">Taekwondo</a>
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">태권도</a>
         </div>
 
         <div class="md:hidden">
@@ -56,18 +56,18 @@
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg">
       <div class="px-4 py-2 space-y-1">
         <a href="/index.html"
-          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Inicio</a>
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">홈</a>
         <a href="/pages/academia.html"
-          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Academia</a>
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">아카데미</a>
         <a href="/pages/idioma.html"
-          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Idioma</a>
-        <a href="/pages/cultura.html" class="block px-4 py-3 bg-red-50 text-red-600 rounded-lg font-medium">Cultura</a>
-        <a href="/pages/contacto.html"
-          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Contacto</a>
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">언어</a>
+        <a href="/pages/cultura.html"
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">문화</a>
+        <a href="/pages/contacto.html" class="block px-4 py-3 bg-red-50 text-red-600 rounded-lg font-medium">연락처</a>
         <a href="/pages/registrate.html"
-          class="block px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-center font-medium">Regístrate</a>
+          class="block px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-center font-medium">등록하기</a>
         <a href="/pages/escueladetaekwondo.html"
-          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">Taekwondo</a>
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">태권도</a>
       </div>
     </div>
   </nav>
@@ -82,14 +82,13 @@
     <div class="relative h-full max-w-7xl mx-auto px-4 flex items-center">
       <div class="text-white max-w-3xl">
         <span class="inline-block px-4 py-2 bg-red-600/90 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
-          <i class="fas fa-fan mr-2"></i>문화 | Cultura Coreana
+          <i class="fas fa-fan mr-2"></i>문화
         </span>
         <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-          Descubre la riqueza<br />cultural de Corea
+          한국 문화의 풍요로움을<br>발견하세요
         </h1>
         <p class="text-xl text-gray-200 mb-8 leading-relaxed">
-          Desde los palacios ancestrales hasta el K-pop moderno, sumérgete en una cultura que combina tradición e
-          innovación.
+          고대 궁궐부터 현대 K팝까지, 전통과 혁신이 어우러진 문화에 푹 빠져보세요.
         </p>
       </div>
     </div>
@@ -104,11 +103,11 @@
   <main class="max-w-7xl mx-auto px-4 py-16">
     <!-- Título de sección -->
     <div class="text-center mb-12">
-      <span class="text-red-600 font-semibold text-sm tracking-wider uppercase">Experiencias culturales</span>
-      <h2 class="text-4xl font-bold mt-2 mb-4">Sumérgete en Corea</h2>
+      <span class="text-red-600 font-semibold text-sm tracking-wider uppercase">문화체험</span>
+      <h2 class="text-4xl font-bold mt-2 mb-4">한국에 푹 빠져보세요</h2>
       <div class="w-24 h-1 bg-red-600 mx-auto"></div>
       <p class="text-gray-600 max-w-2xl mx-auto mt-6">
-        Explora nuestras actividades y talleres diseñados para acercarte a la auténtica cultura coreana
+        진정한 한국 문화를 더욱 가까이에서 경험할 수 있도록 마련된 다양한 활동과 워크숍을 살펴보세요.
       </p>
     </div>
 
@@ -125,14 +124,13 @@
         </div>
         <div class="p-6">
           <div class="flex justify-between items-start mb-3">
-            <h3 class="text-2xl font-bold">Hanbok</h3>
-            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">Vestimenta</span>
+            <h3 class="text-2xl font-bold">한복</h3>
+            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">차림새</span>
           </div>
-          <p class="text-gray-600 mb-4">Descubre la elegancia del traje tradicional coreano y su significado cultural.
-            Talleres de uso y fotografía.</p>
+          <p class="text-gray-600 mb-4">한국 전통 의상의 우아함과 문화적 의미를 발견해 보세요. 전통 의상을 입고 사진을 찍는 워크숍도 진행됩니다.</p>
           <a href="#"
             class="inline-flex items-center text-red-600 font-medium group-hover:translate-x-2 transition-transform">
-            Más información <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            추가 정보 <i class="fas fa-arrow-right ml-2 text-sm"></i>
           </a>
         </div>
       </div>
@@ -148,14 +146,13 @@
         </div>
         <div class="p-6">
           <div class="flex justify-between items-start mb-3">
-            <h3 class="text-2xl font-bold">Gastronomía</h3>
+            <h3 class="text-2xl font-bold">요리법</h3>
             <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">Comida</span>
           </div>
-          <p class="text-gray-600 mb-4">Aprende a preparar Kimchi, Bibimbap y otros platillos tradicionales en nuestros
-            talleres de cocina.</p>
+          <p class="text-gray-600 mb-4">저희 쿠킹 워크숍에서 김치, 비빔밥 등 다양한 전통 요리 만드는 법을 배워보세요.</p>
           <a href="#"
             class="inline-flex items-center text-red-600 font-medium group-hover:translate-x-2 transition-transform">
-            Más información <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            추가 정보 <i class="fas fa-arrow-right ml-2 text-sm"></i>
           </a>
         </div>
       </div>
@@ -171,14 +168,13 @@
         </div>
         <div class="p-6">
           <div class="flex justify-between items-start mb-3">
-            <h3 class="text-2xl font-bold">Música</h3>
+            <h3 class="text-2xl font-bold">음악</h3>
             <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">K-pop/Tradicional</span>
           </div>
-          <p class="text-gray-600 mb-4">Desde el K-pop hasta la música tradicional coreana (Gugak). Clases de baile y
-            apreciación musical.</p>
+          <p class="text-gray-600 mb-4">K팝부터 한국 전통 음악(국악)까지. 댄스 수업 및 음악 감상.</p>
           <a href="#"
             class="inline-flex items-center text-red-600 font-medium group-hover:translate-x-2 transition-transform">
-            Más información <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            추가 정보 <i class="fas fa-arrow-right ml-2 text-sm"></i>
           </a>
         </div>
       </div>
@@ -194,14 +190,14 @@
         </div>
         <div class="p-6">
           <div class="flex justify-between items-start mb-3">
-            <h3 class="text-2xl font-bold">Juegos Tradicionales</h3>
-            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">Diversión</span>
+            <h3 class="text-2xl font-bold">전통 게임</h3>
+            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">재미있는</span>
           </div>
-          <p class="text-gray-600 mb-4">Yutnori, Gonggi y otros juegos que han entretenido a generaciones de coreanos.
+          <p class="text-gray-600 mb-4">유트놀이, 공기 등 여러 세대에 걸쳐 한국인들을 즐겁게 해온 놀이들.
           </p>
           <a href="#"
             class="inline-flex items-center text-red-600 font-medium group-hover:translate-x-2 transition-transform">
-            Más información <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            추가 정보 <i class="fas fa-arrow-right ml-2 text-sm"></i>
           </a>
         </div>
       </div>
@@ -217,13 +213,13 @@
         </div>
         <div class="p-6">
           <div class="flex justify-between items-start mb-3">
-            <h3 class="text-2xl font-bold">Caligrafía</h3>
-            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">Arte</span>
+            <h3 class="text-2xl font-bold">달필</h3>
+            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">미술</span>
           </div>
-          <p class="text-gray-600 mb-4">Aprende el arte de la caligrafía coreana (Seoye) y la pintura tradicional.</p>
+          <p class="text-gray-600 mb-4">한국 서예와 전통 회화를 배워보세요.</p>
           <a href="#"
             class="inline-flex items-center text-red-600 font-medium group-hover:translate-x-2 transition-transform">
-            Más información <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            추가 정보 <i class="fas fa-arrow-right ml-2 text-sm"></i>
           </a>
         </div>
       </div>
@@ -239,14 +235,13 @@
         </div>
         <div class="p-6">
           <div class="flex justify-between items-start mb-3">
-            <h3 class="text-2xl font-bold">Festivales</h3>
-            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">Celebraciones</span>
+            <h3 class="text-2xl font-bold">축제</h3>
+            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">축하</span>
           </div>
-          <p class="text-gray-600 mb-4">Celebra con nosotros el Seollal (Año Nuevo) y Chuseok (Cosecha) con actividades
-            especiales.</p>
+          <p class="text-gray-600 mb-4">저희와 함께 특별한 행사들을 통해 설날과 추석을 축하하세요.</p>
           <a href="#"
             class="inline-flex items-center text-red-600 font-medium group-hover:translate-x-2 transition-transform">
-            Más información <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            추가 정보 <i class="fas fa-arrow-right ml-2 text-sm"></i>
           </a>
         </div>
       </div>
@@ -254,20 +249,21 @@
 
     <!-- Banner destacado de juegos tradicionales -->
     <div class="relative h-80 rounded-3xl overflow-hidden shadow-2xl mb-16">
-      <img src="/assets/images/cultura juegos.jpg" alt="Juegos Tradicionales Coreanos" class="w-full h-full object-cover" />
+      <img src="/assets/images/cultura juegos.jpg" alt="Juegos Tradicionales Coreanos"
+        class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-l from-black/80 via-black/50 to-transparent flex items-center">
         <div class="max-w-7xl mx-auto px-4 text-white w-full">
           <div class="ml-auto max-w-lg">
             <span class="inline-block px-4 py-2 bg-yellow-500 text-black rounded-full text-sm font-bold mb-4">
-              <i class="fas fa-dice mr-2"></i>Juegos Tradicionales
+              <i class="fas fa-dice mr-2"></i>전통 게임
             </span>
-            <h2 class="text-4xl font-bold mb-4">Diviértete como un coreano</h2>
+            <h2 class="text-4xl font-bold mb-4">한국인처럼 즐거운 시간을 보내세요</h2>
             <p class="text-lg mb-6 text-gray-200">
-              Todos los sábados ven y aprende a jugar Yutnori, el juego de mesa favorito de las familias coreanas.
+              매주 토요일, 한국 가정에서 즐겨하는 보드게임인 유트놀이를 배우러 오세요.
             </p>
             <a href="#"
               class="inline-flex items-center px-6 py-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-400 transition-colors font-medium">
-              Reserva tu lugar
+              장소를 예약하세요
               <i class="fas fa-arrow-right ml-2"></i>
             </a>
           </div>
@@ -278,9 +274,9 @@
     <!-- Sección de eventos especiales -->
     <div class="mb-16">
       <div class="flex justify-between items-center mb-8">
-        <h3 class="text-3xl font-bold">Próximos Eventos Culturales</h3>
+        <h3 class="text-3xl font-bold">다가오는 문화 행사</h3>
         <a href="#" class="text-red-600 hover:text-red-700 font-medium inline-flex items-center">
-          Ver todos <i class="fas fa-arrow-right ml-2"></i>
+          모두 보기 <i class="fas fa-arrow-right ml-2"></i>
         </a>
       </div>
 
@@ -289,16 +285,16 @@
         <div class="bg-white rounded-xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-shadow">
           <div class="bg-red-600 text-white rounded-lg p-4 text-center min-w-[80px]">
             <span class="text-2xl font-bold block">25</span>
-            <span class="text-sm">MAY</span>
+            <span class="text-sm">5월</span>
           </div>
           <div>
-            <h4 class="text-xl font-bold mb-2">Taller de Hanbok</h4>
-            <p class="text-gray-600 mb-2">Aprende a vestir el traje tradicional y su historia</p>
+            <h4 class="text-xl font-bold mb-2">한복 워크숍</h4>
+            <p class="text-gray-600 mb-2">전통 의상을 입는 방법과 그 역사에 대해 알아보세요.</p>
             <div class="flex items-center text-sm text-gray-500">
               <i class="fas fa-clock mr-2"></i>
-              <span>3:00 PM - 5:00 PM</span>
+              <span>오후 3시 - 오후 5시</span>
               <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
-              <span>Sede Principal</span>
+              <span>본부</span>
             </div>
           </div>
         </div>
@@ -307,16 +303,16 @@
         <div class="bg-white rounded-xl shadow-lg p-6 flex items-start space-x-4 hover:shadow-xl transition-shadow">
           <div class="bg-blue-600 text-white rounded-lg p-4 text-center min-w-[80px]">
             <span class="text-2xl font-bold block">2</span>
-            <span class="text-sm">JUN</span>
+            <span class="text-sm">6월</span>
           </div>
           <div>
-            <h4 class="text-xl font-bold mb-2">Festival de K-pop</h4>
-            <p class="text-gray-600 mb-2">Concurso de baile y covers de canciones populares</p>
+            <h4 class="text-xl font-bold mb-2">케이팝 페스티벌</h4>
+            <p class="text-gray-600 mb-2">댄스 경연대회 및 인기곡 커버</p>
             <div class="flex items-center text-sm text-gray-500">
               <i class="fas fa-clock mr-2"></i>
-              <span>4:00 PM - 8:00 PM</span>
+              <span>오후 4시 - 오후 8시</span>
               <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
-              <span>Auditorio</span>
+              <span>청중</span>
             </div>
           </div>
         </div>
@@ -325,7 +321,7 @@
 
     <!-- Galería rápida -->
     <div>
-      <h3 class="text-3xl font-bold text-center mb-8">Galería Cultural</h3>
+      <h3 class="text-3xl font-bold text-center mb-8">문화갤러리</h3>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="aspect-square rounded-xl overflow-hidden">
           <img src="/assets/images/cultura juegos.jpg" alt="Cultura coreana"
@@ -347,36 +343,50 @@
     </div>
   </main>
 
-  <!-- Footer mejorado -->
+  <!-- Footer -->
   <footer class="bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-4 py-12">
       <div class="grid md:grid-cols-4 gap-8">
         <div>
           <img src="/assets/images/Logo nuevo CCC.jpeg" alt="logo" class="w-32 h-auto mb-4 rounded-lg" />
-          <p class="text-gray-400 text-sm">Conectando Colombia con la cultura coreana desde 2025</p>
+          <p class="text-gray-400 text-sm">
+            2025년부터 콜롬비아와 한국 문화를 연결합니다
+          </p>
         </div>
 
         <div>
-          <h4 class="text-lg font-bold mb-4">Enlaces rápidos</h4>
+          <h4 class="text-lg font-bold mb-4">빠른 링크</h4>
           <ul class="space-y-2 text-gray-400">
-            <li><a href="#" class="hover:text-white transition-colors">Sobre nosotros</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Programas</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Profesores</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Testimonios</a></li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">회사 소개</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">프로그램</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">교사</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">사용후기</a>
+            </li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-lg font-bold mb-4">Contacto</h4>
+          <h4 class="text-lg font-bold mb-4">연락하다</h4>
           <ul class="space-y-2 text-gray-400">
-            <li><i class="fas fa-map-marker-alt mr-2"></i> Medellin, Colombia</li>
+            <li>
+              <i class="fas fa-map-marker-alt mr-2"></i> 메데인, 콜롬비아
+            </li>
             <li><i class="fas fa-phone mr-2"></i> +57 3207098884</li>
-            <li><i class="fas fa-envelope mr-2"></i> centroculturalcoreano525@gmail.com</li>
+            <li>
+              <i class="fas fa-envelope mr-2"></i> centroculturalcoreano525@gmail.com
+            </li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-lg font-bold mb-4">Síguenos</h4>
+          <h4 class="text-lg font-bold mb-4">우리를 따르라</h4>
           <div class="flex space-x-4">
             <a href="#"
               class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
@@ -390,16 +400,12 @@
               class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
               <i class="fab fa-youtube"></i>
             </a>
-            <a href="#"
-              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
-              <i class="fab fa-tiktok"></i>
-            </a>
           </div>
         </div>
       </div>
 
       <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-        &copy; 2025 Centro Cultural Coreano en Colombia. Todos los derechos reservados.
+        &copy; © 2025 주콜롬비아 한국문화원. 모든 권리 보유.
       </div>
     </div>
   </footer>
