@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - 콜롬비아 한국문화센터</title>
+    <link rel="icon" href="/assets/images/Logo nuevo CCC.jpeg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <style>
+        .korean-pattern {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.03"><path d="M20 20 L30 20 L25 30 Z" fill="%23ff0000"/><circle cx="70" cy="70" r="5" fill="%230000ff"/><circle cx="30" cy="70" r="5" fill="%23ff0000"/></svg>');
+            background-size: 100px 100px;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 korean-pattern">
+    <!-- Navbar -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo con animación -->
+                <div class="flex items-center space-x-4">
+                    <img src="/assets/images/Logo nuevo CCC.jpeg" alt="Centro Cultural Coreano"
+                        class="w-32 h-auto max-h-24 rounded-lg shadow-md hover-scale cursor-pointer" />
+                    <span class="hidden lg:block text-sm font-medium text-gray-500 border-l-2 border-gray-300 pl-4">
+                        콜롬비아의 한국 문화
+                    </span>
+                </div>
+
+                <!-- Menú desktop -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="/index.html"
+                        class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">홈</a>
+                    <a href="/pages/academia.html"
+                        class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">아카데미</a>
+                    <a href="/pages/idioma.html"
+                        class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">언어</a>
+                    <a href="/pages/cultura.html"
+                        class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">문화</a>
+                    <a href="/pages/contacto.html"
+                        class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">연락처</a>
+                    <a href="/pages/registrate.html"
+                        class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">등록하기</a>
+                    <a href="/pages/escueladetaekwondo.html"
+                        class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">태권도</a>
+                </div>
+
+                <!-- Botón menú móvil -->
+                <div class="md:hidden">
+                    <button id="menu-toggle"
+                        class="text-gray-600 hover:text-red-600 text-2xl focus:outline-none transition-colors">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg">
+            <div class="px-4 py-2 space-y-1">
+                <a href="/index.html"
+                    class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">홈</a>
+                <a href="/pages/academia.html"
+                    class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">아카데미</a>
+                <a href="/pages/idioma.html"
+                    class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">언어</a>
+                <a href="/pages/cultura.html"
+                    class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">문화</a>
+                <a href="/pages/contacto.html"
+                    class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">연락처</a>
+                <a href="/pages/registrate.html"
+                    class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">등록하기</a>
+                <a href="/pages/escueladetaekwondo.html"
+                    class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">태권도</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section de la historia -->
+    <div class="relative h-[50vh] min-h-[400px] overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="/assets/images/portada_inicio.png" alt="Historia del Centro Cultural"
+                class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60"></div>
+        </div>
+
+        <div class="relative h-full max-w-7xl mx-auto px-4 flex items-center">
+            <div class="text-white max-w-3xl">
+                <span
+                    class="inline-block px-4 py-2 bg-red-600/90 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+                    🇰🇷 nuestra historia
+                </span>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Conoce el<br />Centro Cultural Coreano
+                </h1>
+                <p class="text-xl text-gray-200 leading-relaxed">
+                    Un puente entre Colombia y Corea, construido con pasión y dedicación
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de la historia -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Fecha de fundación destacada -->
+            <div class="text-center mb-12">
+                <div class="inline-block bg-red-600 text-white px-8 py-3 rounded-full text-2xl font-bold shadow-lg">
+                    25 de febrero de 2025
+                </div>
+            </div>
+
+            <!-- Historia completa -->
+            <div class="prose prose-lg max-w-none">
+                <div class="bg-red-50 p-8 rounded-2xl mb-10 border-l-8 border-red-600">
+                    <p class="text-xl text-gray-800 italic leading-relaxed">
+                        "El amor por los idiomas y las culturas puede unir a las personas sin importar la distancia
+                        geográfica"
+                    </p>
+                    <p class="text-right font-semibold text-red-600 mt-4">— Camilo Henao García, Fundador</p>
+                </div>
+
+                <div class="space-y-6 text-gray-700">
+                    <p class="text-lg leading-relaxed">
+                        El <span class="font-bold text-red-600">Centro Cultural Coreano</span> fue fundado el <span
+                            class="font-semibold">25 de febrero de 2025</span> por <span class="font-semibold">Camilo
+                            Henao García</span>, un apasionado por los idiomas y las culturas del mundo. Desde muy
+                        joven, Camilo desarrolló un profundo interés por aprender nuevas lenguas y conocer diferentes
+                        tradiciones, lo que lo llevó a descubrir la riqueza cultural de Corea.
+                    </p>
+
+                    <p class="text-lg leading-relaxed">
+                        Motivado por su amor por el idioma coreano, la historia, la música, el cine y las tradiciones de
+                        Corea, decidió crear un espacio donde las personas pudieran acercarse a esta fascinante cultura
+                        de una manera auténtica y accesible.
+                    </p>
+
+                    <p class="text-lg leading-relaxed">
+                        Así nació este centro cultural: un lugar dedicado a promover el aprendizaje del idioma coreano,
+                        compartir la cultura coreana y crear puentes entre Corea y el mundo hispanohablante.
+                    </p>
+
+                    <p class="text-lg leading-relaxed">
+                        Desde su fundación, el centro tiene como objetivo inspirar a estudiantes, amantes de la cultura
+                        asiática y curiosos del mundo a descubrir Corea más allá de lo superficial, explorando su
+                        idioma, su historia, sus valores y sus expresiones artísticas.
+                    </p>
+
+                    <p class="text-lg leading-relaxed">
+                        Más que un lugar de aprendizaje, el Centro Cultural Coreano busca ser una comunidad, donde el
+                        respeto por otras culturas, la amistad y el conocimiento se unen para crear nuevas oportunidades
+                        de crecimiento personal y cultural.
+                    </p>
+
+                    <p class="text-lg leading-relaxed font-medium text-red-600">
+                        El proyecto nació con una visión clara: demostrar que el amor por los idiomas y las culturas
+                        puede unir a las personas sin importar la distancia geográfica.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Decoración coreana -->
+            <div class="flex justify-center space-x-3 my-16">
+                <div class="w-16 h-1 bg-red-600 rounded-full"></div>
+                <div class="w-16 h-1 bg-blue-600 rounded-full"></div>
+                <div class="w-16 h-1 bg-red-600 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del equipo -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-red-600 font-semibold text-sm tracking-wider uppercase">우리 팀</span>
+                <h2 class="text-4xl font-bold mt-2 mb-4">Nuestro Equipo</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Conoce a las personas que hacen posible este proyecto
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Camilo Henao -->
+                <div
+                    class="team-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-red-600 to-red-800 relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-user-tie text-8xl text-white/50"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold mb-1">Camilo Henao García</h3>
+                        <p class="text-red-600 font-semibold mb-3">Director Fundador</p>
+                        <p class="text-gray-600 text-sm">
+                            Apasionado por los idiomas y las culturas del mundo. Creador del centro cultural.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Adrián Charris -->
+                <div
+                    class="team-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-blue-600 to-blue-800 relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-clipboard-list text-8xl text-white/50"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold mb-1">Adrián Charris</h3>
+                        <p class="text-red-600 font-semibold mb-3">Coordinador Administrativo</p>
+                        <p class="text-gray-600 text-sm">
+                            Encargado de la gestión administrativa y operativa del centro cultural.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Daniel Felipe Burgos -->
+                <div
+                    class="team-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-yellow-600 to-yellow-800 relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-chalkboard-teacher text-8xl text-white/50"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold mb-1">Daniel Felipe Burgos</h3>
+                        <p class="text-red-600 font-semibold mb-3">Coordinador Académico de Apoyo</p>
+                        <p class="text-gray-600 text-sm">
+                            Responsable del soporte académico y la calidad educativa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Steven Noreña -->
+                <div
+                    class="team-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-purple-600 to-purple-800 relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-bullhorn text-8xl text-white/50"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold mb-1">Steven Noreña</h3>
+                        <p class="text-red-600 font-semibold mb-3">Coordinador de Comunicaciones y Marketing</p>
+                        <p class="text-gray-600 text-sm">
+                            Encargado de la comunicación, marketing y difusión del centro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="../assets/images/Logo nuevo CCC.jpeg" alt="logo" class="w-32 h-auto mb-4 rounded-lg" />
+                    <p class="text-gray-400 text-sm">
+                        2025년부터 콜롬비아와 한국 문화를 연결합니다
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="sobre_ccc.html" class="hover:text-white transition-colors">Sobre nosotros</a></li>
+                        <li><a href="academia.html" class="hover:text-white transition-colors">Programas</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Profesores</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Testimonios</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Medellín, Colombia</li>
+                        <li><i class="fas fa-phone mr-2"></i> +57 3207098884</li>
+                        <li><i class="fas fa-envelope mr-2"></i> centroculturalcoreano525@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                &copy; 2025 주콜롬비아 한국문화원. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js" defer></script>
+</body>
+
+</html>

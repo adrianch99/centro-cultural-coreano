@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>등록 | 한국 문화원</title>
-  <link rel="icon" href="/assets/images/Logo nuevo CCC.jpeg" type="image/x-icon">
+  <link rel="icon" href="/assets/images/Logo nuevo CCC.jpeg" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
   <script src="../assets/js/script.js" defer></script>
 </head>
 
@@ -35,9 +35,9 @@
           <a href="/pages/cultura.html"
             class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">문화</a>
           <a href="/pages/contacto.html"
-            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full shadow-md">연락처</a>
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">연락처</a>
           <a href="/pages/registrate.html"
-            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg">등록하기</a>
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">등록하기</a>
           <a href="/pages/escueladetaekwondo.html"
             class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">태권도</a>
         </div>
@@ -62,26 +62,38 @@
           class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">언어</a>
         <a href="/pages/cultura.html"
           class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">문화</a>
-        <a href="/pages/contacto.html" class="block px-4 py-3 bg-red-50 text-red-600 rounded-lg font-medium">연락처</a>
+        <a href="/pages/contacto.html"
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">연락처</a>
         <a href="/pages/registrate.html"
-          class="block px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-center font-medium">등록하기</a>
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">등록하기</a>
         <a href="/pages/escueladetaekwondo.html"
           class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">태권도</a>
       </div>
     </div>
   </nav>
 
-
   <!-- Hero Section pequeño -->
-  <div class="relative h-64 overflow-hidden">
-    <div class="absolute inset-0 gradient-korea opacity-90"></div>
-    <div class="absolute inset-0 flex items-center justify-center opacity-10">
-      <i class="fas fa-pen-fancy text-white text-9xl"></i>
+  <div class="relative h-[70vh] min-h-[600px] overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/assets/images/portada_registro.png" alt="Registro" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40"></div>
     </div>
     <div class="relative h-full max-w-7xl mx-auto px-4 flex items-center">
-      <div class="text-white">
+      <div class="text-white max-w-3xl">
+        <div class="flex items-center space-x-3 mb-4">
+          <span class="inline-block px-4 py-2 bg-red-600/90 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+            <i class="fas fa-pen-fancy mr-2"></i>기록
+          </span>
+        </div>
+
         <h1 class="text-5xl font-bold mb-4">등록 양식</h1>
-        <p class="text-xl text-gray-200">우리 커뮤니티에 가입하고 한국어 여행을 시작하세요</p>
+        <p class="text-xl text-gray-200">
+          우리 커뮤니티에 가입하고 한국어 여행을 시작하세요
+        </p>
+      </div>
+
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+        <i class="fas fa-chevron-down text-2xl"></i>
       </div>
     </div>
   </div>
@@ -101,7 +113,9 @@
               </div>
               <div>
                 <h3 class="font-bold">강좌 이용</h3>
-                <p class="text-gray-600 text-sm">저희 어학, 문화, 태권도 프로그램에 등록하세요.</p>
+                <p class="text-gray-600 text-sm">
+                  저희 어학, 문화, 태권도 프로그램에 등록하세요.
+                </p>
               </div>
             </div>
 
@@ -111,7 +125,9 @@
               </div>
               <div>
                 <h3 class="font-bold">독점 이벤트</h3>
-                <p class="text-gray-600 text-sm">워크숍 및 문화 축제에 대한 정보를 받아보세요.</p>
+                <p class="text-gray-600 text-sm">
+                  워크숍 및 문화 축제에 대한 정보를 받아보세요.
+                </p>
               </div>
             </div>
 
@@ -121,7 +137,9 @@
               </div>
               <div>
                 <h3 class="font-bold">코리아 커뮤니티</h3>
-                <p class="text-gray-600 text-sm">한국 문화에 관심 있는 다른 사람들과 연결되세요</p>
+                <p class="text-gray-600 text-sm">
+                  한국 문화에 관심 있는 다른 사람들과 연결되세요
+                </p>
               </div>
             </div>
 
@@ -131,7 +149,9 @@
               </div>
               <div>
                 <h3 class="font-bold">인증</h3>
-                <p class="text-gray-600 text-sm">학업을 마치면 공식 수료증을 받게 됩니다.</p>
+                <p class="text-gray-600 text-sm">
+                  학업을 마치면 공식 수료증을 받게 됩니다.
+                </p>
               </div>
             </div>
           </div>
@@ -154,9 +174,13 @@
         <!-- Testimonio rápido -->
         <div class="bg-gradient-to-r from-red-600 to-blue-600 rounded-2xl p-6 text-white">
           <i class="fas fa-quote-left text-3xl opacity-50 mb-2"></i>
-          <p class="text-lg mb-4">"한국문화원 덕분에 한국어를 배울 수 있었고, 지금은 콜롬비아에 있는 한국 회사에서 일하고 있습니다."</p>
+          <p class="text-lg mb-4">
+            "한국문화원 덕분에 한국어를 배울 수 있었고, 지금은 콜롬비아에 있는
+            한국 회사에서 일하고 있습니다."
+          </p>
           <div class="flex items-center">
-            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-red-600 font-bold">MJ
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-red-600 font-bold">
+              MJ
             </div>
             <div class="ml-3">
               <p class="font-bold">마리아 호세</p>
@@ -173,7 +197,9 @@
             <i class="fas fa-pen-fancy mr-3"></i>
             등록 양식
           </h2>
-          <p class="text-red-100 text-sm mt-1">시작하려면 세부 정보를 입력하세요.</p>
+          <p class="text-red-100 text-sm mt-1">
+            시작하려면 세부 정보를 입력하세요.
+          </p>
         </div>
 
         <form class="p-8 space-y-6" action="/registrar" method="POST">
@@ -192,7 +218,7 @@
           <div>
             <label class="block text-sm font-semibold text-gray-700 mb-2">
               <i class="fas fa-envelope text-red-600 mr-2"></i>
-              이메일 
+              이메일
             </label>
             <input type="email" name="email" placeholder="ejemplo@correo.com"
               class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-400 focus:outline-none input-focus"
@@ -203,7 +229,7 @@
           <div>
             <label class="block text-sm font-semibold text-gray-700 mb-2">
               <i class="fas fa-comment-dots text-red-600 mr-2"></i>
-              기타 의견 
+              기타 의견
             </label>
             <textarea name="mensaje" placeholder="Cuéntanos más sobre ti, tus intereses o expectativas..."
               class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-400 focus:outline-none input-focus"
@@ -212,10 +238,12 @@
 
           <!-- Checkbox términos -->
           <div class="flex items-start">
-            <input type="checkbox" class="mt-1 mr-3 accent-red-600" required>
+            <input type="checkbox" class="mt-1 mr-3 accent-red-600" required />
             <label class="text-sm text-gray-600">
-              나는 <a href="#" class="text-red-600 hover:underline">이용 약관</a> 그리고
-              <a href="#" class="text-red-600 hover:underline">개인 정보 보호 정책</a>
+              나는
+              <a href="terminos-de-uso.html" class="text-red-600 hover:underline">이용 약관</a>
+              그리고
+              <a href="politica-de-privacidad.html" class="text-red-600 hover:underline">개인 정보 보호 정책</a>
             </label>
           </div>
 
@@ -225,10 +253,6 @@
             <i class="fas fa-paper-plane mr-2"></i>
             등록하다
           </button>
-
-          <p class="text-center text-sm text-gray-500 mt-4">
-            이미 계정이 있으신가요? <a href="#" class="text-red-600 hover:underline">로그인</a>
-          </p>
         </form>
       </div>
     </div>
@@ -306,7 +330,8 @@
             </li>
             <li><i class="fas fa-phone mr-2"></i> +57 3207098884</li>
             <li>
-              <i class="fas fa-envelope mr-2"></i> centroculturalcoreano525@gmail.com
+              <i class="fas fa-envelope mr-2"></i>
+              centroculturalcoreano525@gmail.com
             </li>
           </ul>
         </div>

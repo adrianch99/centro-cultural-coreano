@@ -37,9 +37,9 @@
           <a href="/pages/cultura.html"
             class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">문화</a>
           <a href="/pages/contacto.html"
-            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full shadow-md">연락처</a>
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">연락처</a>
           <a href="/pages/registrate.html"
-            class="px-4 py-2 text-sm font-medium bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg">등록하기</a>
+            class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">등록하기</a>
           <a href="/pages/escueladetaekwondo.html"
             class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-full transition-all duration-300">태권도</a>
         </div>
@@ -65,7 +65,7 @@
           class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">문화</a>
         <a href="/pages/contacto.html" class="block px-4 py-3 bg-red-50 text-red-600 rounded-lg font-medium">연락처</a>
         <a href="/pages/registrate.html"
-          class="block px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-center font-medium">등록하기</a>
+          class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">등록하기</a>
         <a href="/pages/escueladetaekwondo.html"
           class="block px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">태권도</a>
       </div>
@@ -73,9 +73,9 @@
   </nav>
 
   <!-- Hero Section de Cultura -->
-  <div class="relative h-[60vh] min-h-[500px] overflow-hidden">
+  <div class="relative h-[70vh] min-h-[600px] overflow-hidden">
     <div class="absolute inset-0">
-      <img src="/assets/images/cultura juegos.jpg" alt="Cultura Coreana" class="w-full h-full object-cover" />
+      <img src="/assets/images/cultura juegos.png" alt="Cultura Coreana" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30"></div>
     </div>
 
@@ -90,19 +90,31 @@
         <p class="text-xl text-gray-200 mb-8 leading-relaxed">
           고대 궁궐부터 현대 K팝까지, 전통과 혁신이 어우러진 문화에 푹 빠져보세요.
         </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#talleres"
+            class="px-8 py-4 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl font-medium inline-flex items-center">
+            다양한 활동과 워크숍에 대한 정보를 읽어보세요
+            <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <a href="#galeria_cultural"
+            class="px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 transition-all duration-300 font-medium inline-flex items-center border border-white/50">
+            문화갤러리 보기
+          </a>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!-- Indicador scroll -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-      <i class="fas fa-chevron-down text-2xl"></i>
-    </div>
+  <!-- Indicador scroll -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+    <i class="fas fa-chevron-down text-2xl"></i>
   </div>
 
   <!-- Contenido principal -->
   <main class="max-w-7xl mx-auto px-4 py-16">
     <!-- Título de sección -->
-    <div class="text-center mb-12">
+    <div id="talleres" class="text-center mb-12">
       <span class="text-red-600 font-semibold text-sm tracking-wider uppercase">문화체험</span>
       <h2 class="text-4xl font-bold mt-2 mb-4">한국에 푹 빠져보세요</h2>
       <div class="w-24 h-1 bg-red-600 mx-auto"></div>
@@ -223,38 +235,16 @@
           </a>
         </div>
       </div>
-
-      <!-- Tarjeta 6: Festivales -->
-      <div class="bg-white rounded-2xl shadow-xl overflow-hidden culture-card group">
-        <div class="h-48 festival-bg relative overflow-hidden">
-          <i
-            class="fas fa-calendar-alt absolute text-8xl text-white/30 -bottom-4 -right-4 transform group-hover:scale-110 transition-transform duration-500"></i>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <i class="fas fa-mask text-5xl text-white"></i>
-          </div>
-        </div>
-        <div class="p-6">
-          <div class="flex justify-between items-start mb-3">
-            <h3 class="text-2xl font-bold">축제</h3>
-            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">축하</span>
-          </div>
-          <p class="text-gray-600 mb-4">저희와 함께 특별한 행사들을 통해 설날과 추석을 축하하세요.</p>
-          <a href="#"
-            class="inline-flex items-center text-red-600 font-medium group-hover:translate-x-2 transition-transform">
-            추가 정보 <i class="fas fa-arrow-right ml-2 text-sm"></i>
-          </a>
-        </div>
-      </div>
     </div>
 
     <!-- Banner destacado de juegos tradicionales -->
     <div class="relative h-80 rounded-3xl overflow-hidden shadow-2xl mb-16">
-      <img src="/assets/images/cultura juegos.jpg" alt="Juegos Tradicionales Coreanos"
+      <img src="/assets/images/juego yutnori.jpeg" alt="Juegos Tradicionales Coreanos"
         class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-l from-black/80 via-black/50 to-transparent flex items-center">
         <div class="max-w-7xl mx-auto px-4 text-white w-full">
           <div class="ml-auto max-w-lg">
-            <span class="inline-block px-4 py-2 bg-yellow-500 text-black rounded-full text-sm font-bold mb-4">
+            <span class="inline-block px-4 py-2 bg-red-600 text-white rounded-full text-sm font-bold mb-4">
               <i class="fas fa-dice mr-2"></i>전통 게임
             </span>
             <h2 class="text-4xl font-bold mb-4">한국인처럼 즐거운 시간을 보내세요</h2>
@@ -262,7 +252,7 @@
               매주 토요일, 한국 가정에서 즐겨하는 보드게임인 유트놀이를 배우러 오세요.
             </p>
             <a href="#"
-              class="inline-flex items-center px-6 py-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-400 transition-colors font-medium">
+              class="inline-flex items-center px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-medium">
               장소를 예약하세요
               <i class="fas fa-arrow-right ml-2"></i>
             </a>
@@ -320,11 +310,11 @@
     </div>
 
     <!-- Galería rápida -->
-    <div>
+    <div id="galeria_cultural">
       <h3 class="text-3xl font-bold text-center mb-8">문화갤러리</h3>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="aspect-square rounded-xl overflow-hidden">
-          <img src="/assets/images/cultura juegos.jpg" alt="Cultura coreana"
+          <img src="/assets/images/cultura juegos.png" alt="Cultura coreana"
             class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
         </div>
         <div class="aspect-square rounded-xl overflow-hidden">
